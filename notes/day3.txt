@@ -1,0 +1,265 @@
+min and max 
+Number 
+	Interger
+	Float
+	Double
+	Short 
+Char 
+String 
+
+Searching 
+	linear search 
+	Binary Search 
+	
+Sorting 
+	Bubble Sort 
+	Quick Sort
+	Merge Sort 
+	
+Linked List 
+	singly 
+	Doubly 
+	stack 
+	queue 
+	
+	
+	10 23 45 66 77 (10) - o(1) - best 
+	10 23 45 66 77 (77) - O(n) - worst 
+	10 23 45 66 77 (45) - O(n/2) - average case 
+	
+ 1- 	public static int linearSearch(int array[], int x) {
+ 1- 		int n = array.length;
+
+n - 		for (int i = 0; i < n; i++) {
+			if (array[i] == x)
+				return i;
+		}
+1- 		return -1;
+	}
+
+o(n) 
+
+
+
+
+
+Binary Search 
+element = 8
+array=7 
+low = 0 (3)
+high = 6 (9)
+3, 4, 5, 6, 7, 8, 9
+            |	  | 
+			low	  high	 
+-------------------------------------------------------------- 
+repeating  
+0<=6 
+while(low <=high) { (True)
+
+mid = (low +high)/2  => = 4+6 /2 = 5 
+ 
+	 arr[5] = 8 ==8 
+	if(arr[mid]==element) {
+		return mid
+	}
+	       6 < 8  
+	if(arr[mid] < element) {
+		low = mid +1; 
+	}else {
+		high = mid -1;
+	}
+}
+
+
+1000
+500
+250
+125
+
+
+3, 4, 5, 6, 7, 8, 9
+
+
+O(1) 
+O(log n)
+
+
+
+
+
+O(1) - 1 or 100000000
+public static void printFirstItem(int[] items) {
+    System.out.println(items[0]);
+}
+
+O(n)
+public static void printAllItems(int[] items) {
+    for (int item : items) {
+        System.out.println(item);
+    }
+}
+
+
+  public static void printAllPossibleOrderedPairs(int[] items) { - 1 
+    for (int firstItem : items) { 				/ n 
+        for (int secondItem : items) {			/n 
+            System.out.println(firstItem + ", " + secondItem);
+        }
+    }
+}
+O(n2)
+
+
+
+
+public static void myfunction(int[] items) {
+    System.out.println(items[0]);			//1 
+
+    int middleIndex = items.length/2;		//1
+    int index = 0;							
+
+    while (index < middleIndex) {					/ n/2 
+        System.out.println(items[index]);
+        index++;
+    }
+
+    for (int i = 0; i < 100; i++) {			/ /100 
+        System.out.println("hi");
+    }
+}
+
+O(1 + 1 + n/2 + 100) = O(n)
+
+
+
+
+Quick(time complexity + how it works)
+
+
+10 25 56 89 44 11 
+ |
+ 
+5 3 7 10 23 14 
+	   | 
+	   
+5 3 7 10 14 23 
+			 | 
+
+
+------------------------------------------
+pivot = 10 
+-------------------------------------------
+
+worst O(n*n) => O(n2)
+
+
+partition (log n) low < high 
+
+quick sort n 
+
+O(n log n) 
+
+
+
+
+
+
+ | 
+ 5, 8, 9, 3, 6, 10, 15, 12 , 16, infinity 
+ 		   	  j	   i	 
+
+
+ 5, 8, 9, 3, 6,
+10 
+15, 12 , 16,
+
+partition(l, h) {
+	pivot = a[l]; 
+	
+	i = l ; 
+	j = h ; 
+	while(i<j) {}
+	do {i++;}while(a[i] <=pivot)
+	do{j--;}while(a[j]>pivot);
+	
+	
+	if(i<j) {
+		swap(a[i], a[j]); 
+	}
+	swap(a[l], a[j])
+	}
+	
+	return j; 
+}	
+	
+	
+Stack & Queue 
+
+SinglyLinkedList [head=null, tail=null, size=0]
+
+SinglyLinkedList (first time)
+	
+	[head=Node 
+		[value=One, next=null], 
+	tail=Node 
+		[value=One, next=null], 
+	size=1]
+	
+SinglyLinkedList (second time)
+	[head=Node 
+		[value=Two, next=Node 
+		[value=One, next=null]], 
+	tail=Node 
+		[value=One, next=null], 
+	size=2]
+	
+	addfirst("one")
+	addFirst("Two")
+	addLast("three")
+	
+	
+	two - one - three 
+SinglyLinkedList 
+	[head=Node 
+		[value=Two, next=Node 
+		[value=One, next=Node 
+		[value=Three, next=null]]],
+	tail=Node 
+		[value=Three, next=null], 
+	size=3]
+	
+SinglyLinkedList 
+	[head=Node 
+		[value=One, next=Node 
+		[value=Three, next=null]], 
+	tail=Node 
+		[value=Three, next=null], 
+	size=2]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Tree
+	Binary BST 
+	AVL 
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,72 @@
+suhasini - refresher on data strcutres, 6 years exp 
+prasanta - 9 years in java, need design patterns, worked on spring boot 
+Ashwini - need design patterns, 2year on java, spring boot 
+samrudhi - looking for design patterns, spring boot 
+vithoba - new to java 8 year of exp, worked on c++, linux 
+pranav - 1 year in baxter, studied java in college days, want spring boot, unit testing 
+Satish - 15 years exp, looking for containarization, dev to deployment 
+shreyansh - 6 years in java, learn design architecture, need to understand what to do when req changes 
+saudamini - new joinee, know java in college, looking for all the module 
+krishna - lokoing for microservices, and data structures 
+rahman - DS is revision, looking design pattern, microservices 
+virinder - need time complexity and space complexity 
+ravi - 8 years exp with c#, new to Java, looking for spring boot and microservices 
+shivraj - looking for java11, spring boot and microservices 
+
+
+Collection 
+	Set, List, Map, Queue 
+	
+Generics 
+	?, Integer, ? extends Number, ? super Integer 
+
+
+
+class Object {}
+class Student extends Object {
+	public void marks() {}
+}
+class Teacher extends Object {
+	public void salary(){}
+} 
+
+Object obj  = new Student(); 
+obj = new Teacher(); 
+
+ArrayList list = new ArrayList(); 
+list.add(new Student()); 
+list.add(new Teacher()); 
+list.add(new Integer(10)); 
+
+for(Object temp : list) {
+	temp.marks(); 
+}
+
+
+
+Stack stack = new Stack(); 
+
+student 
+class StackStudent  {
+	Student[] arr = new Student[5]; 
+	
+	// methods 
+}
+
+Teacher 
+class StackTeacher  {
+	Teacher[] arr = new Teacher[5]; 
+	
+	// methods 
+}
+
+// non-primitive 
+class Stack<T> {
+	T obj; 
+}
+
+
+
+
+
+

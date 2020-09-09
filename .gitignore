@@ -1,0 +1,9 @@
+documents
+**/.metadata/**
+**/bin/**
+**/.settings/**
+*.class
+**/.eclipse/**
+
+
+
