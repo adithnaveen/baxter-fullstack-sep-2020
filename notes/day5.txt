@@ -1,0 +1,19 @@
+AVL Trees 
+Java 11 
+JPMS 
+
+JEP 200 – Modular JDK 
+JEP 201  - Modular Source Code 
+JEP 260 – Encapsulate most internal API’s 
+JEP 261 – Module System 
+JEP 282 – jLink – The Java Linker
+JSR 376 – Java Platform Modular System 
+JEP 238 – Multi-Release JAR Files 
+JEP 275 – Modular Java Application Packaging 
+
+
+
+https://gunnarmorling.github.io/jdk-api-diff/jdk10-jdk11-api-diff.html
+
+Java 11 JEP 330 Single-File Source Code 
+https://openjdk.java.net/jeps/330
