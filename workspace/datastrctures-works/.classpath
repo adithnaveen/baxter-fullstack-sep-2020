@@ -7,5 +7,7 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="java11"/>
+	<classpathentry kind="src" path="01singleton"/>
+	<classpathentry kind="src" path="02factory"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

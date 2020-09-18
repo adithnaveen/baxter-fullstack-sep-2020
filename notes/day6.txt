@@ -1,0 +1,78 @@
+1. Deflate 
+2. Inflate 
+3. JEP - Java 11 
+4. JMH 
+5. Desgin Pattern 
+ 
+mvn archetype:generate \
+          -DinteractiveMode=false \
+          -DarchetypeGroupId=org.openjdk.jmh \
+          -DarchetypeArtifactId=jmh-java-benchmark-archetype \
+          -DgroupId=org.sample \
+          -DartifactId=test \
+          -Dversion=1.0
+		  
+		  
+public class Hello. {
+	main() {
+		new Thread(new Runnable () {
+			public void run() {
+				System.out.println("hi")
+			}
+		}).start(); 
+		
+		new Thread (() -> System.out.println("hi")).start(); 
+		
+	}
+}
+
+
+class Company {
+	// one instance 
+} 
+class Employee {}
+
+
+new Employee(); 
+new Employee(); 
+new Employee(); 
+new Employee(); 
+new Employee(); 
+
+
+
+when persisting into the file 
+
+Object Created..
+Instance One - hashcode 578866604
+Data Saved... 
+Instance Two - hashcode 942986815
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
