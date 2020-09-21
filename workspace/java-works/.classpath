@@ -9,5 +9,8 @@
 	<classpathentry kind="src" path="java11"/>
 	<classpathentry kind="src" path="01singleton"/>
 	<classpathentry kind="src" path="02factory"/>
+	<classpathentry kind="src" path="03-abstract-factory"/>
+	<classpathentry kind="src" path="04-stratergy"/>
+	<classpathentry kind="src" path="05-command"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

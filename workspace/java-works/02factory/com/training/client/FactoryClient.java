@@ -5,7 +5,7 @@ import com.training.dao.IProductDao;
 
 public class FactoryClient {
 	public static void main(String[] args) {
-		// is called tight coupling 
+		// if you create an object is called tight coupling 
 		IProductDao productDao ; 
 		productDao = DaoFactory.getProductDao(); 
 		

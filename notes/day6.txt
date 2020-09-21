@@ -48,6 +48,10 @@ Instance One - hashcode 578866604
 Data Saved... 
 Instance Two - hashcode 942986815
 
+Object Created..
+Instance One - hashcode 578866604
+Data Saved... 
+Instance Two - hashcode 578866604
 
 
 
