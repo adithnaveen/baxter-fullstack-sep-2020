@@ -1,0 +1,68 @@
+1. Singleton 
+2. Factory 
+
+
+class CTScan {}
+
+class Baxter {} 
+class Philips {}
+class GE {}
+class Siemens {}
+class Stater {}
+class Xzy{}
+.... 
+
+
+
+Baxter baxter = new Baxter(); 
+baxter.methodxxx(); 
+
+Philips philips = new Philips(); 
+philips.methodxxx(); 
+
+
+
+
+class CTScan {
+	
+	public static CTScan getInstance(String compName) {
+		if(compName.equals("baxter")) {
+			return new Baxter(); 
+		} else if(compName.equals("philips")) {
+			return new Philips(); 
+		} else if(compName.equals("ge")) {
+			return new GE(); 
+		}
+	} 
+	
+}
+
+class Baxter extends CTScan {} 
+class Philips extends CTScan {}
+class GE extends CTScan {}
+
+
+
+
+CTScan b = CTScan.getInstance("baxter"); 
+b = CTScan.getInstance("ge"); 
+
+
+1. proxy pattern 
+2. service locator 
+3. decorator pattern 
+4. IOC pattern 
+5. Observer Pattern 
+
+6. MVC pattern 
+7. Facade pattern
+8. Criteria (java 8 and before version and after)
+
+
+
+
+
+
+
+
+

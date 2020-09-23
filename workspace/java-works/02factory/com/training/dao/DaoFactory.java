@@ -5,6 +5,7 @@ import java.util.ResourceBundle;
 import com.training.dao.impl.HibernateProductDao;
 import com.training.dao.impl.JDBCProductDao;
 import com.training.dao.impl.MongoProductDao;
+import com.training.dao.IProductDao;
 
 // since we dont want any body to create an instance 
 // make it private, no body should inherit 

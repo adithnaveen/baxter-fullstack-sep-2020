@@ -1,0 +1,49 @@
+1. singleton 
+2. Factory 
+3. Abstract Factory Pattern 
+4. Strategy Pattern 
+5. Command Pattern 
+
+6. Proxy Pattern 
+*********************************************************************
+dao is instance of class com.training.proxy.dao.DummyProductDao
+Saving product... 
+Deleting product... 
+Getting product count from DB 
+There are 88 number of product... 
+*********************************************************************
+dao is instance of class com.sun.proxy.$Proxy0
+*** Begining Transaction*** 
+Saving product... 
+*** End Transaction*** 
+--------------------------------------
+*** Begining Transaction*** 
+Deleting product... 
+*** End Transaction*** 
+--------------------------------------
+Getting product count from DB 
+There are 88 number of product... 
+
+*********************************************************************
+
+
+
+7. Observer Pattern (checked)
+8. Builder Pattern (checked)
+	select * from employe; 
+	select * from employe where empname like "%harry%"; 
+	select * from employe where empname like "%harry%" or empcity like "%bengaluru%"; 	
+	select * from employe where empname like "%harry%" or empcity like "%bengaluru%" order by empname asc; 		
+	select * from employe where empname like "%harry%" or empcity like "%bengaluru%" order by empname asc, city desc; 			
+9. Criteria Pattern 
+10. IoC Pattern 
+11. Aop (Cross Cutting Concern)
+12. Service Locator Pattern (checked)
+13. Bridge Pattern 
+	Shape
+		RedCircle
+		BlueCircle
+		GreenCircle
+		RedSquare
+		BlueSquare
+		GreenSquare
