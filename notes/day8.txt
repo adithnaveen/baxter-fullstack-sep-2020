@@ -47,3 +47,21 @@ There are 88 number of product...
 		RedSquare
 		BlueSquare
 		GreenSquare
+
+
+
+
+ 
+
+
+--------------------------------------------------
+Difference in the Patterns
+--------------------------------------------------
+A decorator adds one or more responsibilities to an object, whereas a proxy controls access to an object.
+
+Proxies vary in the degree to which they are implemented like a decorator. A protection proxy might be implemented exactly like a decorator. 
+
+The difference between Proxy and Decorator according to the GoF is that Proxy restricts the client. Decorator does not.
+
+
+Bridge Pattern: Decouple an abstraction from its implementation so that the two can vary independently.
