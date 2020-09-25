@@ -1,91 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="com.training.bridge.color.impl.GreenColor" project="java-works" 
-    file="/java-works/10-bridge-pattern/com/training/bridge/color/impl/GreenColor.java" binary="false" 
+  <class id="1" language="java" name="com.training.decorator.impl.Triangle" project="java-works" 
+    file="/java-works/11-decorator-pattern/com/training/decorator/impl/Triangle.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="340" y="421"/>    
+    <position height="101" width="131" x="195" y="202"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="com.training.bridge.color.impl.BlueColor" project="java-works" 
-    file="/java-works/10-bridge-pattern/com/training/bridge/color/impl/BlueColor.java" binary="false" 
+  <class id="2" language="java" name="com.training.decorator.impl.Circle" project="java-works" 
+    file="/java-works/11-decorator-pattern/com/training/decorator/impl/Circle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="131" x="366" y="202"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="com.training.decorator.contract.Shape" project="java-works" 
+    file="/java-works/11-decorator-pattern/com/training/decorator/contract/Shape.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="139" y="432"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="com.training.bridge.shape.impl.Circle" project="java-works" 
-    file="/java-works/10-bridge-pattern/com/training/bridge/shape/impl/Circle.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="636" y="424"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="com.training.bridge.contract.Shape" project="java-works" 
-    file="/java-works/10-bridge-pattern/com/training/bridge/contract/Shape.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="731" y="171"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <interface id="5" language="java" name="com.training.bridge.contract.Color" project="java-works" 
-    file="/java-works/10-bridge-pattern/com/training/bridge/contract/Color.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="249" y="152"/>    
+    <position height="83" width="148" x="281" y="343"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="6" language="java" name="com.training.bridge.shape.impl.Triangle" project="java-works" 
-    file="/java-works/10-bridge-pattern/com/training/bridge/shape/impl/Triangle.java" binary="false" 
+  <class id="4" language="java" name="com.training.decorator.decorate.ShapeDecorator" project="java-works" 
+    file="/java-works/11-decorator-pattern/com/training/decorator/decorate/ShapeDecorator.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="864" y="417"/>    
+    <position height="-1" width="-1" x="715" y="316"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="7">    
+  <class id="5" language="java" name="com.training.decorator.decorate.impl.RedShapeDecorator" project="java-works" 
+    file="/java-works/11-decorator-pattern/com/training/decorator/decorate/impl/RedShapeDecorator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="814" y="563"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.training.decorator.client.App" project="java-works" 
+    file="/java-works/11-decorator-pattern/com/training/decorator/client/App.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="191" y="79"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="7">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="8">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <association id="9">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="8" name="color">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="9" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
+      <attribute id="10" name="decorateShape"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="10">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="5"/>  
+  <realization id="12">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
   </realization>  
-  <generalization id="11">    
-    <end type="SOURCE" refId="3"/>    
+  <generalization id="13">    
+    <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
-  <generalization id="12">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <realization id="13">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

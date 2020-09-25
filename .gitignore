@@ -4,6 +4,7 @@ documents
 **/.settings/**
 *.class
 **/.eclipse/**
+**/db-works/**
 
 
 
