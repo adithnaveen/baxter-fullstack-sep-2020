@@ -1,0 +1,71 @@
+GET - Browser (All browsers will generate by default GET)
+All Records 
+
+GET localhost:7676/db/users 			(Checked)
+GET localhost:7676/db/users/101 - to get 1 record (NOT_FOUND - 404)
+POST localhost:7676/db/users Insert 
+DELETE  localhost:7676/db/users/{101}
+PUT localhost:7676/db/users
+
+
+
+CheckedException-> Exception
+UnCheckedException -> RunTimeException 
+
+
+public class Employee {
+	private int empId; 
+	private String empName; 
+}
+
+
+{
+	empId:"101a", 
+	empName:"Hemanth"
+}
+
+
+
+https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
+
+
+
+
+SpringBoot - Rest Service 
+Restful - HEATEOS 
+
+Netflix OSS Tools 
+
+Eureka - Discovery Server
+Zuul - API Gateway 
+Hystrix - Circuit Breaker 
+Ribbon - Client Side load balancer
+Open Feign - Invoking other MS (Proxy)
+Sleuth - Distributed Tracing 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

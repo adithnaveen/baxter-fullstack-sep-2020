@@ -2,6 +2,7 @@ package com.baxter.bootworks.beans;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.hateoas.RepresentationModel;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,7 +16,7 @@ import lombok.ToString;
 @ToString
 //@AllArgsConstructor
 @Document
-public class User {
+public class User  extends RepresentationModel<User>{
 	@Id
 	private Integer id; 
 	private String userName; 
