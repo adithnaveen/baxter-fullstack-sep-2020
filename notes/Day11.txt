@@ -1,0 +1,75 @@
+Ravi 
+----------------------------------------
+class Controller {
+	@GetMapping("/bean")
+	public Bean getBean(){}
+	
+	@GetMapping("/beans")
+	public List<Bean> listBeans() {}
+	
+	public Bean saveBean() {}
+	public Bean updateBean(){}
+}
+----------------------------------------
+
+HATEOAS - compliant 
+Naveen 
+http://ip:port/bean 
+	i got a bean 
+	_links:{
+		listBeans: http://ip:port/beans 
+	}
+	
+	
+http://ip:port/beans 
+	i got more beans 
+	
+
+Message 
+	like 
+	dislike
+	comment 
+	
+
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.3.4.RELEASE&packaging=jar&jvmVersion=11&groupId=com.training&artifactId=product-service&name=product-service&description=Demo%20project%20for%20Spring%20Boot&packageName=com.training.product-service&dependencies=cloud-eureka,web,lombok,data-mongodb,cloud-feign,cloud-hystrix,cloud-ribbon
+
+
+
+Product Service 
+http://localhost:9100/product/101
+
+API-GATEWAY (?????)
+http://localhost:8765/product-service/product/101
+
+
+ProductReview 
+
+User -> product -> call to Product-Review -> response -> from product to end user 
+
+
+
+
+
+
+{"reviewId":101,"reviewerName":"Harry","message":"Nice Product"},[Content-Type:"application/json", Transfer-Encoding:"chunked", Date:"Wed, 30 Sep 2020 14:50:40 GMT", Keep-Alive:"timeout=60", Connection:"keep-alive"]>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
