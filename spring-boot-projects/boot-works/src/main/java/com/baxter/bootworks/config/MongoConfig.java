@@ -5,6 +5,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
+import com.baxter.bootworks.beans.Address;
+import com.baxter.bootworks.beans.User;
 import com.baxter.bootworks.repo.UserRepository;
 
 @Configuration

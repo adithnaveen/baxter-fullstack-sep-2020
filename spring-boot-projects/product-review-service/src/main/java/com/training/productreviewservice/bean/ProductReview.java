@@ -21,11 +21,15 @@ public class ProductReview {
 	private Integer reviewId;
 	private String reviewerName; 
 	private String message;
-	public ProductReview(Integer reviewId, String reviewerName, String message) {
+	private Integer port; 
+	
+	public ProductReview(Integer reviewId, String reviewerName, String message, 
+			Integer port ) {
 		super();
 		this.reviewId = reviewId;
 		this.reviewerName = reviewerName;
 		this.message = message;
+		this.port = port; 
 	} 
 	
 	

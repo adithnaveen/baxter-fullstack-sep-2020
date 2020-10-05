@@ -2,21 +2,14 @@ package com.baxter.bootworks.beans;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.hateoas.RepresentationModel;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@ToString
+//@Getter
+//@Setter
+//@NoArgsConstructor
+//@ToString
 //@AllArgsConstructor
 @Document
-public class User  extends RepresentationModel<User>{
+public class User { //  extends RepresentationModel<User>{
 	@Id
 	private Integer id; 
 	private String userName; 
@@ -33,6 +26,45 @@ public class User  extends RepresentationModel<User>{
 		this.userEmail = userEmail;
 		this.address = address;
 	} 
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public Integer getUserAge() {
+		return userAge;
+	}
+	public void setUserAge(Integer userAge) {
+		this.userAge = userAge;
+	}
+	public String getUserEmail() {
+		return userEmail;
+	}
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
+	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", userName=" + userName + ", userAge=" + userAge + ", userEmail=" + userEmail
+				+ ", address=" + address + "]";
+	}
+	
 	
 	
 }

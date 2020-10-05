@@ -1,0 +1,26 @@
+> docker network ls 
+> docker network create ccp-net
+> docker pull mongo 
+> docker run  --name=ccp_mongo --net=ccp-net -d -p  27017:27017 mongo
+> docker exec -it ccp_mongo /bin/bash
+
+--prod 
+> mvn clean -Dmaven.test.skip=true package
+> docker build -t user-app1 . 
+> docker run --name=user-app-container1 --restart=always --net=ccp-net -d -p 7676:7676 user-app1:latest
+
+
+
+development 
+> mvn clean install 
+
+
+
+
+
+
+
+
+
+
+

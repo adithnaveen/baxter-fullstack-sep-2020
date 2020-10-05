@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.training.productservice.bean.ProductReview;
 
-// this is registerd with eureka 
-@FeignClient("product-review-service")
+// this is registered with eureka 
+@FeignClient("productreviewservice")
 public interface ProductReviewProxy {
 
 	@GetMapping("/review/{id}")

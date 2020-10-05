@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.training.productservice.bean.Product;
 import com.training.productservice.bean.ProductWithReview;
 import com.training.productservice.proxy.ProductReviewProxy;
@@ -60,4 +61,23 @@ public class ProductController {
 		return service.getAllProducts();
 	}
 
+	@GetMapping("/fault-tolenrance")
+	@HystrixCommand( fallbackMethod =  "fallBackHystrixMethod")
+	public String hystrixExcample() {
+		
+		String str = "Some String" ;
+		if(str.equals("Hello")) {
+			return str; 
+		}else {
+			throw new RuntimeException("Sorry wrong data"); 
+		}
+	}
+	
+	
+	
+	public String fallBackHystrixMethod() {
+		return "Hello Returened Default"; 
+	}
+	
+	
 }
