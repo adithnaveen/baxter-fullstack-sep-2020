@@ -22,9 +22,14 @@ public class ProductController {
 	@Autowired
 	private IProductService service;
 
-	@Autowired
-	private ProductReviewProxy proxy;
+//	@Autowired
+//	private ProductReviewProxy proxy;
 
+	@GetMapping("/")
+	public String working() {
+		return "Working"; 
+	}
+	
 	@GetMapping("/product/{id}")
 	public Product getProduct(@PathVariable Integer id) {
 		return service.getProduct(id);
@@ -41,15 +46,15 @@ public class ProductController {
 		return service.getProduct(id);
 	}
 
-	@GetMapping("/product-feign/{id}")
-	public ProductWithReview getProductFeign(@PathVariable Integer id) {
-
-		System.out.println("Response from Feign -> " + proxy.getProductReviewById(id));
-		ProductWithReview pwr = new ProductWithReview(); 
-		pwr.setProduct(service.getProduct(id));
-		pwr.setProductReview(proxy.getProductReviewById(id));
-		return pwr; 
-	}
+//	@GetMapping("/product-feign/{id}")
+//	public ProductWithReview getProductFeign(@PathVariable Integer id) {
+//
+//		System.out.println("Response from Feign -> " + proxy.getProductReviewById(id));
+//		ProductWithReview pwr = new ProductWithReview(); 
+//		pwr.setProduct(service.getProduct(id));
+//		pwr.setProductReview(proxy.getProductReviewById(id));
+//		return pwr; 
+//	}
 
 	@PostMapping("/product")
 	public Product insertProduct(@RequestBody Product product) {
