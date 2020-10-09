@@ -1,0 +1,48 @@
+Mock
+	Service 
+	Controller 	
+WebkMVC 
+TestRestTemplate
+
+Introduction to Docker 
+Create a hello-world for docker 
+
+
+docker pull 
+docker --help 
+docker run hello-world 
+docker images (passive)
+docker ps (Action)
+docker stop <containerID>
+docker start container <containerID>
+> docker system prune (this will remove all the docker container which are stopped)
+> docker system prune -a (this will remove all the docker container + images will be taken of if any of the running instance is not found)
+> docker login 
+> docker inspect <containerid>
+> docker logs <containerid>
+> docker pull openjdk:11
+
+1. build a .jar file 
+> mvn clean -Dmaven.test.skip=true package
+>  docker build -f Dockerfile -t userapplication . 
+
+
+
+> docker inspect baxter_mongo - 172.18.0.2
+build the .jar 
+>mvn clean -Dmaven.test.skip=true package
+>docker run --name=user-app-container1  --net=baxter-net -p -d 7677:7677 userapplication:latest 
+> docker logs <containerID>
+
+
+
+
+
+
+
+
+
+
+
+
+
